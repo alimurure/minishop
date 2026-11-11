@@ -5,7 +5,7 @@ import com.tecsup.minishop.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+// Servicio principal para la gestión de productos
 @Service
 public class ProductService {
 
