@@ -34,3 +34,4 @@ public class ProductService {
                 .orElseThrow(() -> new RuntimeException("Producto no encontrado con id: " + id));
     }
 }
+// Servicio para la gestión de productos
