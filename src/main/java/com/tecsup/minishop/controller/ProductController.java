@@ -22,10 +22,10 @@ public class ProductController {
     @PostMapping
     public ResponseEntity<Product> create(@RequestBody ProductDTO productDto) {
         Product product = Product.builder()
-                .id(productDto.getId())
-                .name(productDto.getName())
-                .price(productDto.getPrice())
-                .stock(productDto.getStock())
+                .id(productDto.id())
+                .name(productDto.name())
+                .price(productDto.price())
+                .stock(productDto.stock())
                 .build();
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(productService.save(product));
